@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>Task Hostinget Karolis</title>
+</head>
+<header id="header-menu">
+    <div class="back-box">
+        <div class="back-box-tint">
+            <div class="header-wrap">
+                <div class="padingas">
+                    <nav id="nav-menu">
+                        <ul class="main-nav">
+                            <li>
+                                <a href="#" class="logo"></a>
+                            </li>
+                            <a href="#"><h3>Web Hosting</h3></a>
+                            <li>
+                                <a href="#">
+                                    <div class="clickable">
+                                        <h5>On Sale</h5>
+                                        <h3>Cloud Hosting</h3></div>
+                                </a>
+                            </li>
+                            <li><a href="#"><h3>VPS Hosting</h3></a></li>
+                            <li><a href="#"><h3>Domain CHecker</h3></a></li>
+                            <li><a href="#"><h3>Website Builder</h3></a></li>
+                            <li><a href="#"><i class="fa fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="gap"></div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="cask">
+                                <h1>New Year Offer</h1>
+                                <br>
+                                <h1><span class="coloured">82% OFF</span> Web Hosting</h1>
+                            </div>
+                            <div class="gap3">
+                                <div class="row">
+                                    <div class="scale2">
+                                        <div class="col-sm-7">
+                                            <div id="countdown">
+                                                <div class="triangle-left"></div>
+                                                <div id='tiles'></div>
+                                                <div class="labels">
+                                                    <li>Days</li>
+                                                    <li>Hours</li>
+                                                    <li>Minuntes</li>
+                                                    <li>Seconds</li>
+                                                </div>
+                                                <div class="triangle-right"></div>
+                                            </div>
+
+                                            <script>
+                                                var target_date = new Date().getTime() + (9000 * 4000 * 10); // set the countdown date
+                                                var days, hours, minutes, seconds; // variables for time units
+
+                                                var countdown = document.getElementById("tiles"); // get tag element
+
+                                                getCountdown();
+
+                                                setInterval(function() {
+                                                    getCountdown();
+                                                }, 1000);
+
+                                                function getCountdown() {
+
+                                                    // find the amount of "seconds" between now and target
+                                                    var current_date = new Date().getTime();
+                                                    var seconds_left = (target_date - current_date) / 1000;
+
+                                                    days = pad(parseInt(seconds_left / 86400));
+                                                    seconds_left = seconds_left % 86400;
+
+                                                    hours = pad(parseInt(seconds_left / 3600));
+                                                    seconds_left = seconds_left % 3600;
+
+                                                    minutes = pad(parseInt(seconds_left / 60));
+                                                    seconds = pad(parseInt(seconds_left % 60));
+
+                                                    // format countdown string + set tag value
+                                                    countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+                                                }
+
+                                                function pad(n) {
+                                                    return (n < 10 ? '0' : '') + n;
+                                                }
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="push">
+                                    <div class="scale2">
+                                        <div class="button">Get Started Now</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relativity">
+                            <div class="changeformobile">
+                                <div class="col-sm-1">
+                                    <div class="padingas4">
+                                        <div class="cask3">
+                                            <div class="cash">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+
+                                    <div class="offer">
+                                        <div class="rectangle">Save 82%</div>
+                                        <div class="triangle-down"></div>
+                                    </div>
+
+                                    <div class="pricesum">1</div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="padingas2">
+                                        <div class="sidesum">45</div>
+                                    </div>
+                                    <div class="cask2">
+                                    </div>
+                                    <div class="row">
+                                        <div class="padingas3">
+                                            <div class="monthly">/mo</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap2"></div>
+                    <div class="row">
+                        <nav id="nav-menu">
+                            <ul class="main-nav2">
+                                <li><a href="#"><h4>✔️ Guaranteed 99.9% Uptime</h4></a></li>
+                                <li><a href="#"><h4>✔️ Superior Speed Performance</h4></a></li>
+                                <li><a href="#"><h4>✔️ 24/7 Support Chart</h4></a></li>
+                                <a href="#"><h4>✔️ 30-Day Money-Back Guarantee</h4></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+</body>
+
+</html>
